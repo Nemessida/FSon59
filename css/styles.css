@@ -1,0 +1,140 @@
+/* Variables */
+
+:root{
+    --font-family-primary:'Roboto', sans-serif;
+    --font-family-secondary:'Raleway', sans-serif;
+    --color-accent:#2196f3;
+    --color-primary:#757575;
+    --color-secondary:#000000;
+    --color-third:#ffffff;
+    --color-footer:#2F303A;
+}
+
+/* Base */
+
+body{
+    color: var(--color-primary);
+    font-size: 14px;
+    font-family: var(--font-family-primary);
+    font-weight: 400;
+}
+
+li > a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.accent:hover {
+    color: var(--color-accent);
+}
+
+.accent:focus {
+    color: var(--color-accent);
+}
+
+.logo-accent {
+    color: var(--color-accent);
+}
+
+.title {
+    color: var(--color-secondary);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+}
+
+.logo {
+    font-family: var(--font-family-secondary);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+/* HEADER */
+
+.header-logo {
+    color: var(--color-secondary);
+    text-decoration: none;
+}
+
+.header-nav-link {
+    color: var(--color-secondary);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.header-contact-link {
+    color: var(--color-primary);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+/* HERO */
+
+.hero-title {
+    background-color: #2F303A;
+    color: var(--color-third);
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+}
+
+.hero-btn {
+    background-color: var(--color-accent);
+    color: var(--color-third);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+}
+
+/* FEATURES */
+
+.features-subtitle {
+    color: var(--color-secondary);
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+}
+
+.features-text {
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+/* PROJECTS */
+
+/* TEAM */
+
+.team-name {
+    color: var(--color-secondary);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+}
+
+.team-position {
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+/* FOOTER */
+
+.foter-logo {
+    background-color: var(--color-footer);
+    color: var(--color-third);
+}
+
+.footer-link {
+    font-style: normal;
+}
