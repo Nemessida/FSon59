@@ -110,7 +110,7 @@ li {
     letter-spacing: 0.03em;
 }
 
-/* PROJECTS */
+/* ABOUT */
 
 /* TEAM */
 
@@ -130,11 +130,19 @@ li {
 
 /* FOOTER */
 
-.foter-logo {
+footer{
     background-color: var(--color-footer);
+}
+
+.footer-logo {
     color: var(--color-third);
+    font-style: normal;
 }
 
 .footer-link {
     font-style: normal;
+    color: var(--color-third);
+    line-height: 1.71;
+    letter-spacing: 0.03em;
 }
+
