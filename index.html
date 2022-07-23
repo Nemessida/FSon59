@@ -55,16 +55,22 @@
         <section class="hero">
             <div class="hero-inner container">
                     <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-                <button class="hero-btn" type="button">Замовити послугу</button>
+                <button class="hero-btn" type="button" data-modal-open >Замовити послугу</button>
             </div>
         </section>
+
+        <div class="backdrop is-hidden" data-modal >
+            <div class="modal">
+                <button class="btn-close" data-modal-close >Закрити</button>
+            </div>
+        </div>
 
         <section class="features">
             <div class="features-inner container">
                 <h2 class="features-title visually-hidden">особливості</h2>
                 <ul class="features-list">
                     <li class="features-item">
-                        <div class="features-thumb">
+                        <div class="features-wrap">
                             <svg class="features-icon">
                                 <use href="./images/icons.svg#antenna"></use>
                             </svg>
@@ -73,7 +79,7 @@
                         <p class="features-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
                     </li>
                     <li class="features-item">
-                        <div class="features-thumb">
+                        <div class="features-wrap">
                             <svg class="features-icon">
                                 <use href="./images/icons.svg#clock"></use>
                             </svg>
@@ -82,7 +88,7 @@
                         <p class="features-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
                     </li>
                     <li class="features-item">
-                        <div class="features-thumb">
+                        <div class="features-wrap">
                             <svg class="features-icon">
                                 <use href="./images/icons.svg#diagram"></use>
                             </svg>
@@ -91,7 +97,7 @@
                         <p class="features-text">Так само консультація з широким активом значною мірою зумовлює.</p>
                     </li>
                     <li class="features-item">
-                        <div class="features-thumb">
+                        <div class="features-wrap">
                             <svg class="features-icon">
                                 <use href="./images/icons.svg#astronaut"></use>
                             </svg>
@@ -128,7 +134,7 @@
                         <img class="team-img" src="./images/img4.jpg" width="270" height="260" alt="">
                         <h3 class="team-name">Ігор Дем'яненко</h3>
                         <p class="team-position">Product Designer</p>
-                        <div class="team-thumb">
+                        <div class="team-wrap">
                             <ul class="team-social-list">
                                 <li class="team-social-item">
                                     <a class="team-sotial" href="">
@@ -165,7 +171,7 @@
                         <img class="team-img" src="./images/img5.jpg" width="270" height="260" alt="">
                         <h3 class="team-name">Ольга Репіна</h3>
                         <p class="team-position">Frontend Developer</p>
-                        <div class="team-thumb">
+                        <div class="team-wrap">
                             <ul class="team-social-list">
                                 <li class="team-social-item">
                                     <a class="team-sotial" href="">
@@ -202,7 +208,7 @@
                         <img class="team-img" src="./images/img6.jpg" width="270" height="260" alt="">
                         <h3 class="team-name">Миколай Тарасов</h3>
                         <p class="team-position">Marketing</p>
-                        <div class="team-thumb">
+                        <div class="team-wrap">
                             <ul class="team-social-list">
                                 <li class="team-social-item">
                                     <a class="team-sotial" href="">
@@ -239,7 +245,7 @@
                         <img class="team-img" src="./images/img7.jpg" width="270" height="260" alt="">
                         <h3 class="team-name">Михайло Єрмаков</h3>
                         <p class="team-position">UI Designer</p>
-                        <div class="team-thumb">
+                        <div class="team-wrap">
                             <ul class="team-social-list">
                                 <li class="team-social-item">
                                     <a class="team-sotial" href="">
@@ -373,5 +379,7 @@
         </div>
         
     </footer>
+
+    <script src="./js/modal.js"></script>
 </body>
 </html>
