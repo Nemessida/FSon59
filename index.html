@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
@@ -55,13 +55,53 @@
         <section class="hero">
             <div class="hero-inner container">
                     <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-                <button class="hero-btn" type="button" data-modal-open >Замовити послугу</button>
+                <button class="btn" type="button" data-modal-open >Замовити послугу</button>
             </div>
         </section>
 
         <div class="backdrop is-hidden" data-modal >
             <div class="modal">
-                <button class="btn-close" data-modal-close >Закрити</button>
+                <div class="modal-inner">
+                    <button class="btn-close" data-modal-close >Закрити</button>
+                    <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+                    <form class="modal-form">
+                        <label class="modal-form-label" for="user-name">Ім'я</label>
+                        <input class="modal-form-input" id="user-name" type="text" >
+                        <svg class="modal-form-icon" aria-hidden="true">
+                            <use href="./images/icons.svg#person"></use>
+                        </svg>
+                    </form>
+                    <form class="modal-form">
+                        <label class="modal-form-label" for="user-tell">Телефон</label>
+                        <input class="modal-form-input" id="user-tell" type="text">
+                        <svg class="modal-form-icon" aria-hidden="true">
+                            <use href="./images/icons.svg#phone"></use>
+                        </svg>
+                    </form>
+                    <form class="modal-form">
+                        <label class="modal-form-label" for="user-email">Пошта</label>
+                        <input class="modal-form-input" id="user-email" type="text">
+                        <svg class="modal-form-icon" aria-hidden="true">
+                            <use href="./images/icons.svg#mail"></use>
+                        </svg>
+                    </form>
+                    <form class="modal-form">
+                        <label class="modal-form-label" for="user-comment">Коментар</label>
+                        <textarea class="modal-form-input textarea" name="user-comment" id="user-comment" rows="10" placeholder="Введіть текст"></textarea>
+                    </form>
+                    <form class="modal-form">
+                        <div class="checkbox">
+                            <label class="modal-checkbox-label" for="checkbox">Погоджуюся з розсилкою та приймаю <a href="#" class="checkbox-link">Умови договору</a> 
+                                <input class="modal-checkbox-input" type="checkbox" id="checkbox">
+                                <svg class="modal-checkbox-icon">
+                                    <use href="./images/icons.svg#check"></use>
+                                </svg>
+                            </label>
+                        </div>
+                    </form>
+                    <button class="btn-send btn" type="submit">Відправити</button>
+                </div>
+                
             </div>
         </div>
 
