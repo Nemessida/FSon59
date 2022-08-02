@@ -1,64 +1,15 @@
-/* Variables */
+@import './utils/variables';
+@import './utils/base';
+@import './utils/hidden';
 
-:root{
-    --font-family-primary:'Roboto', sans-serif;
-    --font-family-secondary:'Raleway', sans-serif;
-    --color-accent:#2196f3;
-    --color-primary:#757575;
-    --color-secondary:#000000;
-    --color-third:#ffffff;
-    --color-footer:#2F303A;
-    --color-btn: #f5f4fa;
-    --color-icon: #afb1b8;
-}
 
-/* Base */
 
-body{
-    color: var(--color-primary);
-    font-size: 14px;
-    font-family: var(--font-family-primary);
-    font-weight: 400;
-}
 
-ul, h1, h2, h3, p {
-    margin: 0;
-    padding: 0;
-}
 
-li > a {
-    text-decoration: none;
-}
-
-li {
-    list-style-type: none;
-}
-
-a.current {
-    color: var(--color-accent);
-}
-
-a.current::after  {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    content: "";
-    display: block;
-    width: 100%;
-    height: 4px;
-    background-color: var(--color-accent);
-    border-radius: 2px;
-}
 
 .text-accent:hover,
 .text-accent:focus {
     color: var(--color-accent);
-}
-
-.btn:hover,
-.btn:focus {
-    background-color: var(--color-accent);
-    color: var(--color-third);
 }
 
 .logo-accent {
@@ -91,33 +42,8 @@ a.current::after  {
     padding: 0 15px 94px 15px;
 }
 
-.visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-}
 
-.btn {
-    cursor: pointer;
-    background-color: var(--color-accent);
-    color: var(--color-third);
-    border: inherit;
-    border-radius: 4px;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    width: 200px;
-    height: 50px;
-    margin: auto;
-}
+
 
 /* HEADER */
 
@@ -446,18 +372,6 @@ a.current::after  {
     padding-left: 5px;
 }
 
-.btn-close {
-    display: block;
-    margin-left: auto;
-    margin-right: 8px;
-    margin-top: 8px;
-}
-
-.btn-send {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 /* FEATURES */
 
@@ -720,23 +634,6 @@ padding-top: 94px;
     margin-right: 9px;
 }
 
-.filtres-btn {
-    cursor: pointer;
-    background-color: var(--color-btn);
-    color: var(--color-secondary);
-    font-family: var(--font-family-primary);
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.63;
-    letter-spacing: 0.03em;
-    border-radius: 4px;
-    border: 1 solid var(--color-btn);
-    padding: 6px 22px 6px 22px;
-
-    transition-property: background-color, color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 
 /* PROJECTS */
