@@ -1,0 +1,73 @@
+.header {
+    border-bottom: 1px solid #ECECEC;
+
+    &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    height: 80px;
+    
+}
+
+
+    &__list {
+    display: flex;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+    &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 25px;
+}
+
+    &__icon-email {
+    fill: var(--color-icon);
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+    &__icon-smartphone {
+    fill: var(--color-icon);
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+
+    &-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+
+    &__item:not(:last-child) {
+    padding-right: 50px;
+}
+
+    &__list {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+    
+}
+
+}
+
+
+
+
+

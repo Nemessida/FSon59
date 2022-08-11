@@ -1,9 +1,3 @@
-.btn:hover,
-.btn:focus {
-    background-color: var(--color-accent);
-    color: var(--color-third);
-}
-
 .btn {
     cursor: pointer;
     background-color: var(--color-accent);
@@ -17,22 +11,30 @@
     width: 200px;
     height: 50px;
     margin: auto;
+
+    &:hover,
+    &:focus {
+    background-color: var(--color-accent);
+    color: var(--color-third);
 }
 
-.btn-close {
+    &-close {
     display: block;
     margin-left: auto;
     margin-right: 8px;
     margin-top: 8px;
 }
 
-.btn-send {
+    &-send {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+}
 
-.filtres-btn {
+
+
+.filtres__btn {
     cursor: pointer;
     background-color: var(--color-btn);
     color: var(--color-secondary);
